@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(105, 0, 105);
+    color: white;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+	margin: 0;
+	padding: 0;
+    text-align:center
+}
+h1 {
+    color: white;
+    padding-top: 5rem;
+    font-size: 2em;
+    box-sizing: inherit;
+    text-align:center
+
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.score-area {
+	display: inline-block;
+    margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin: 0 0.3rem 0 0;
+}
+.restart {
+	float: right;
+	cursor: pointer;
+}
+.timer {
+	display: inline-block;
+	margin: 0 1rem;
+}
+.deck {
+	padding: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 3em 3em 3em;
+}
+.deck .card {
+	height: 3.7rem;
+	width: 3.7rem;
+	margin: 0.2rem 0.2rem;
+	background: #000000;;
+	font-size: 0;
+	color: #ffffff;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.show {
+	visibility: visible !important;
+	opacity: 100 !important;
+}
+
+.deck .card.match {
+	cursor: default;
+	background: #009914;
+	font-size: 3rem;
+	animation-name: rubberBand;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+}
+.deck .card.open {
+	cursor: default;
+	background: #000a99;
+	font-size: 3rem;
+	animation-name: rubberBand;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+}
+
+
+@media (min-width: 768px) {
+	.container {
+		font-size: 1.3rem;
+	}
+	.deck {
+		width: 36rem;
+		height: 41rem;
+	}
+
+	.deck .card {
+		height: 7.8rem;
+		width: 7rem;
+	}
+
+	.popup {
+		width: 60%;
+	}
+}
+@media (max-width: 320px) {
+	.deck {
+		width: 85%;
+	}
+
+	.deck .card {
+		height: 4.7rem;
+		width: 4.7rem;
+	}
+}
