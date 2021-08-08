@@ -4,6 +4,7 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+/* Set the background, fonts , alignment ... etc*/
 body {
 	height: 41rem;
     background-color: rgb(105, 0, 105);
@@ -14,6 +15,7 @@ body {
 	padding: 0;
     text-align:center
 }
+/* Set the heading */
 h1 {
     color: white;
     padding-top: 5rem;
@@ -66,7 +68,7 @@ h1 {
 	visibility: visible !important;
 	opacity: 100 !important;
 }
-
+/* Set  the cards color if they icons matched */
 .deck .card.match {
 	cursor: default;
 	background: #009914;
@@ -76,6 +78,7 @@ h1 {
 	backface-visibility: visible !important;
 	animation-duration: .75s;
 }
+/* Set the card color if the user open a one */
 .deck .card.open {
 	cursor: default;
 	background: #000a99;
@@ -86,7 +89,7 @@ h1 {
 	animation-duration: .75s;
 }
 
-
+/* Set the game dimensions if the user uses  iPad or similar devices */
 @media (min-width: 768px) {
 	.container {
 		font-size: 1.3rem;
@@ -102,6 +105,7 @@ h1 {
 	}
 
 }
+/* Set the game dimensions if the user uses Mobile phone*/
 @media (max-width: 320px) {
 	.deck {
 		width: 85%;
