@@ -15,10 +15,10 @@
     <header>
         <h1 class="heading"><i class="fas fa-chess-board"></i>  Memory Game</h1>
     </header> 
-    <section class="score-area">
-        <span class="moves"></span>0 Move(s)
+    <section class="score-panel">
+        <span class="moves">0</span> Move(s)
         <div class="timer">0 Min(s) 0 Sec</div>
-        <div class="restart">
+        <div class="restart" onclick=startGame()>
             <i class="fa fa-repeat"></i>
         </div>
     </section>
@@ -29,8 +29,8 @@
         <li class="card" type="plane">
             <i class="fa fa-paper-plane-o"></i>
         </li>
-        <li class="card match" type="anchor">
-            <i class="fa fa-anchor"></i>
+        <li class="card open" type="js">
+            <i class="fab fa-js"></i>
         </li>
         <li class="card" type="bolt" >
             <i class="fa fa-bolt"></i>
