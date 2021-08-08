@@ -50,7 +50,7 @@ var displayCard = function (){
     this.classList.toggle("open");
     this.classList.toggle("show");
     this.classList.toggle("disabled");
-}
+};
 // check if they opened cards were matched or not
 function cardOpen() {
     openedCards.push(this);
@@ -66,11 +66,12 @@ function cardOpen() {
 }
 //if matched 
 function matched(){
-    openedCards[0].classList.add("match", "disabled");
-    openedCards[1].classList.add("match", "disabled");
-    openedCards[0].classList.remove("show", "open", "no-event");
-    openedCards[1].classList.remove("show", "open", "no-event");
-    openedCards = [];
+        openedCards[0].classList.add("match", "disabled");
+        openedCards[1].classList.add("match", "disabled");
+        openedCards[0].classList.remove("show", "open", "no-event");
+        openedCards[1].classList.remove("show", "open", "no-event");
+        openedCards = [];
+    
 }
 // if not matched
 function unmatched(){

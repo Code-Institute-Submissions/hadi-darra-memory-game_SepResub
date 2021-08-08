@@ -88,6 +88,11 @@ h1 {
 	backface-visibility: visible !important;
 	animation-duration: .75s;
 }
+.deck .card.disabled {
+	pointer-events: none;
+	opacity: 0.9;
+}
+
 
 /* Set the game dimensions if the user uses  iPad or similar devices */
 @media (min-width: 768px) {
