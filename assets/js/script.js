@@ -1,18 +1,23 @@
 // Collect the data of the cards and deck so we can process it
 let card = document.getElementsByClassName("card");
 let cards = [...card];
-
-const deck = document.getElementById("card-deck");
-
+let deck = document.getElementById("card-deck");
 let moves = 0;
 let counter = document.querySelector(".moves");
-
 let matchedCard = document.getElementsByClassName("match");
-
-var openedCards = [];
-
+let openedCards = [];
+// counting the time 
+var second = 0, minute = 0; hour = 0;
+let timer = document.querySelector(".timer");
+var interval;
+// toggle the status of the cards to visible
+let displayCard = function (){
+    this.classList.toggle("open");
+    this.classList.toggle("show");
+    this.classList.toggle("disabled");
+};
 function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
+    let currentIndex = array.length, temporaryValue, randomIndex;
 
     while (currentIndex !== 0) {
         randomIndex = Math.floor(Math.random() * currentIndex);
@@ -29,7 +34,7 @@ document.body.onload = startGame();
 function startGame(){
     openedCards = [];
     cards = shuffle(cards);
-    for (var i = 0; i < cards.length; i++){
+    for (let i = 0; i < cards.length; i++){
         deck.innerHTML = "";
         [].forEach.call(cards, function(item) {
             deck.appendChild(item);
@@ -41,20 +46,15 @@ function startGame(){
     second = 0;
     minute = 0; 
     hour = 0;
-    var timer = document.querySelector(".timer");
+    let timer = document.querySelector(".timer");
     timer.innerHTML = "0 mins 0 secs";
     clearInterval(interval);
 }
-// toggle the status of the cards to visible
-var displayCard = function (){
-    this.classList.toggle("open");
-    this.classList.toggle("show");
-    this.classList.toggle("disabled");
-};
+
 // check if they opened cards were matched or not
 function cardOpen() {
     openedCards.push(this);
-    var len = openedCards.length;
+    let len = openedCards.length;
     if(len === 2){
         moveCounter();
         if(openedCards[0].type === openedCards[1].type){
@@ -112,10 +112,7 @@ function moveCounter(){
     }
     
 }
-// counting the time 
-var second = 0, minute = 0; hour = 0;
-var timer = document.querySelector(".timer");
-var interval;
+
 function startTimer(){
     interval = setInterval(function(){
         timer.innerHTML = minute+"mins "+second+"secs";
@@ -130,7 +127,7 @@ function startTimer(){
         }
     },1000);
 }
-for (var i = 0; i < cards.length; i++){
+for (let i = 0; i < cards.length; i++){
     card = cards[i];
     card.addEventListener("click", displayCard);
     card.addEventListener("click", cardOpen);
