@@ -10,19 +10,22 @@
     <script src="https://kit.fontawesome.com/ff30a6363c.js" crossorigin="anonymous"></script>
     <title>Memory Game</title>
 </head>
+<!--Game body starts here-->
 <body>
     <div class="container">
     <header>
+        <!--The heading-->
         <h1 class="heading"><i class="fas fa-chess-board"></i>  Memory Game</h1>
     </header> 
+    <!--Timer and score panel-->
     <section class="score-panel">
-
         <span class="moves">0</span> Move(s)
         <div class="timer">0 Min(s) 0 Sec</div>
         <div class="restart" onclick=startGame()>
             <i class="fa fa-repeat"></i>
         </div>
     </section>
+    <!--Distribute the icons to the cards -->
     <ul class="deck" id="card-deck">
         <li class="card" type="python">
             <i class="fab fa-python"></i>
@@ -72,11 +75,9 @@
         <li class="card" type="bug">
             <i class="fas fa-bug"></i>
         </li>
-      
     </ul>
 </div>
     <script src="assets/js/script.js"></script>
-    
-
 </body>
+<!-- Game body ends here -->
 </html>

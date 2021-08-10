@@ -16,6 +16,7 @@ let displayCard = function (){
     this.classList.toggle("show");
     this.classList.toggle("disabled");
 };
+// Shuffle the cards
 function shuffle(array) {
     let currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -26,7 +27,6 @@ function shuffle(array) {
         array[currentIndex] = array[randomIndex];
         array[randomIndex] = temporaryValue;
     }
-
     return array;
 }
 document.body.onload = startGame();
@@ -50,7 +50,6 @@ function startGame(){
     timer.innerHTML = "0 mins 0 secs";
     clearInterval(interval);
 }
-
 // check if they opened cards were matched or not
 function cardOpen() {
     openedCards.push(this);
@@ -112,7 +111,7 @@ function moveCounter(){
     }
     
 }
-
+// Start the timer and increase the seconds then minutes then hours
 function startTimer(){
     interval = setInterval(function(){
         timer.innerHTML = minute+"mins "+second+"secs";
