@@ -47,6 +47,10 @@ h1 {
 	display: inline-block;
 	margin: 0 1rem;
 }
+p {
+	display: inline-block;
+	margin: 0 1rem;
+}
 /* Set the deck layout */
 .deck {
 	display: flex;
@@ -123,4 +127,24 @@ h1 {
 		height: 4.7rem;
 		width: 4.7rem;
 	}
+}
+/* Set the footer decoration and the alignment */
+footer {
+    margin-top: 2.2rem;
+}
+.social-networks {
+    text-align: center;
+}
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    color: white;
+}
+a:visited {
+    text-decoration: none; 
+    color: white; 
 }
