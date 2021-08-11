@@ -6,6 +6,7 @@ let moves = 0;
 let counter = document.querySelector(".moves");
 let matchedCard = document.getElementsByClassName("match");
 let openedCards = [];
+let totalMatch = 0;
 // counting the time 
 var second = 0, minute = 0; hour = 0;
 let timer = document.querySelector(".timer");
@@ -16,6 +17,7 @@ let displayCard = function (){
     this.classList.toggle("show");
     this.classList.toggle("disabled");
 };
+
 // Shuffle the cards
 function shuffle(array) {
     let currentIndex = array.length, temporaryValue, randomIndex;
@@ -29,7 +31,9 @@ function shuffle(array) {
     }
     return array;
 }
+
 document.body.onload = startGame();
+
 // Shuffle the cards and reset all counters once the game get started
 function startGame(){
     openedCards = [];
@@ -50,6 +54,7 @@ function startGame(){
     timer.innerHTML = "0 mins 0 secs";
     clearInterval(interval);
 }
+
 // check if they opened cards were matched or not
 function cardOpen() {
     openedCards.push(this);
@@ -63,6 +68,7 @@ function cardOpen() {
         }
     }
 }
+
 //if matched 
 function matched(){
         openedCards[0].classList.add("match", "disabled");
@@ -70,8 +76,11 @@ function matched(){
         openedCards[0].classList.remove("show", "open", "no-event");
         openedCards[1].classList.remove("show", "open", "no-event");
         openedCards = [];
-    
+        totalMatch++;
+        if(totalMatch == 8)
+        congratulations();
 }
+
 // if not matched
 function unmatched(){
     openedCards[0].classList.add("unmatched");
@@ -84,13 +93,15 @@ function unmatched(){
         openedCards = [];
     },1100);
 }
+
 // diable the choosen card to compare it
 function disable(){
     Array.prototype.filter.call(cards, function(card){
         card.classList.add('disabled');
     });
 }
-// enable the card and disble the matched cards
+
+// enable the card and disable the matched cards
 function enable(){
     Array.prototype.filter.call(cards, function(card){
         card.classList.remove('disabled');
@@ -99,6 +110,7 @@ function enable(){
         }
     });
 }
+
 // increase the counter
 function moveCounter(){
     moves++;
@@ -111,6 +123,7 @@ function moveCounter(){
     }
     
 }
+
 // Start the timer and increase the seconds then minutes then hours
 function startTimer(){
     interval = setInterval(function(){
@@ -130,4 +143,20 @@ for (let i = 0; i < cards.length; i++){
     card = cards[i];
     card.addEventListener("click", displayCard);
     card.addEventListener("click", cardOpen);
+}
+function congratulations(){
+    if (matchedCard.length == 16){
+        clearInterval(interval);
+        finalTime = timer.innerHTML;
+
+        // show congratulations modal
+        alert('Congratulations you have fininshed the game in '+ finalTime);
+
+        
+        //showing move and time on alert
+        document.getElementById("finalMove").innerHTML = moves;
+        document.getElementById("totalTime").innerHTML = finalTime;
+
+
+    };
 }
