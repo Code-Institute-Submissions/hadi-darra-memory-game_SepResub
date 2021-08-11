@@ -7,8 +7,8 @@
 /* Set the background, fonts , alignment ... etc*/
 body {
 	height: 41rem;
-    background-color: rgb(105, 0, 105);
-    color: white;
+    background-color: #690069;
+    color: #ffffff;
     font-family: "Courier New", monospace;
     font-weight: bold;
 	margin: auto;
@@ -17,7 +17,7 @@ body {
 }
 /* Set the heading */
 h1 {
-    color: white;
+    color: #ffffff;
     padding-top: 5rem;
     font-size: 2em;
     box-sizing: inherit;
@@ -139,9 +139,9 @@ footer {
 .social-networks i {
     font-size: 160%;
     margin: 1%;
-    color: white;
+    color: #ffffff;
 }
 a:visited {
     text-decoration: none; 
-    color: white; 
+    color: #ffffff; 
 }
