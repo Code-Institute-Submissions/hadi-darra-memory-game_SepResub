@@ -11,9 +11,9 @@ let totalMatch = 0;
 
 // counting the time 
 
-var second = 0, minute = 0; hour = 0;
+let second = 0, minute = 0; hour = 0;
 let timer = document.querySelector(".timer");
-var interval;
+let interval;
 
 // toggle the status of the cards to visible
 
