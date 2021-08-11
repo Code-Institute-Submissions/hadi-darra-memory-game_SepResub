@@ -15,23 +15,26 @@ The project has 1 page.
 4- A Cards deck which contains 16 cards (4x4).<br />
 5- At the end our social media accounts links.<br />
 
--	**Tested on W3C CSS/HTML Validator:**<br />
+-	**Tested on W3C CSS Validator:**<br />
 ![CSS Test](assets/images/css-checker.png)
+
+-	**Tested on W3C HTML Validator:**<br />
 ![HTML Test](assets/images/html-checker.png)
+**_NOTE:_**  Regarding the HTML validator there is no need to add h2-h6 element to the section tag.<br />
+
+-	**Tested on Web.dev :**<br />
+![WEB.DEV Test](assets/images/web-dev-test.png)
 
 ## Our accounts on social media:
-  - [Twitter](https://twitter.com/)
+ - [Twitter](https://twitter.com/)
  - [Instagram](https://www.instagram.com/)
  - [Facebook](https://www.facebook.com/)
 ## Screenshots: 
-![Screenshot 1](assets/images/closed-cards.png)
-![Screenshot 2](assets/images/matched-cards.png)
-![Screenshot 3](assets/images/web-dev-test.png)
-![Screenshot 4](assets/images/end-of-the-game.png)
-![Screenshot 5](assets/images/mobile-edition.jpg)
-![Screenshot 6](assets/images/css-checker.png)
-![Screenshot 6](assets/images/html-checker.png)
-**_NOTE:_**  Regarding the HTML validator there is no need to add h2-h6 element to the section tag.
+![Closed cards](assets/images/closed-cards.png)
+![Matched cards](assets/images/matched-cards.png)
+![End of the game](assets/images/end-of-the-game.png)
+![Mobile edition](assets/images/mobile-edition.jpg)
+
 
 ## Resources: 
 https://fontawesome.com/<br />
