@@ -74,7 +74,7 @@ p {
 }
 .show {
 	visibility: visible !important;
-	opacity: 80 !important;
+	
 }
 /* Set  the cards color if they icons matched */
 .deck .card.match {
@@ -82,7 +82,6 @@ p {
 	background: #009914;
 	font-size: 3rem;
 	animation-name: rubberBand;
-	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: .75s;
 }
