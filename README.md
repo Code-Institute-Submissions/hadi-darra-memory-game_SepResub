@@ -24,10 +24,12 @@ The project has 1 page.
  - [Instagram](https://www.instagram.com/)
  - [Facebook](https://www.facebook.com/)
 ## Screenshots: 
-![Screenshot 1](assets/images/screenshot1.png)
-![Screenshot 2](assets/images/screenshot2.png)
-![Screenshot 3](assets/images/screenshot3.png)
-![Screenshot 3](assets/images/screenshot4.jpg)
+![Screenshot 1](assets/images/closed-cards.png)
+![Screenshot 2](assets/images/matched-cards.png)
+![Screenshot 3](assets/images/web-dev-test.png)
+![Screenshot 4](assets/images/end-of-the-game.png)
+![Screenshot 5](assets/images/mobile-edition.jpg)
+![Screenshot 6](assets/images/css-checker.png)
 
 
 ## Resources: 
