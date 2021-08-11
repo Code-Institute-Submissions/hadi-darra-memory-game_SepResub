@@ -4,7 +4,9 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
 /* Set the background, fonts , alignment ... etc*/
+
 body {
 	height: 41rem;
     background-color: #690069;
@@ -15,7 +17,9 @@ body {
 	padding: 0;
     text-align:center
 }
+
 /* Set the heading */
+
 h1 {
     color: #ffffff;
     padding-top: 5rem;
@@ -23,14 +27,18 @@ h1 {
     box-sizing: inherit;
     text-align:center;
 }
+
 /* Set the container of the deck */
+
 .container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
+
 /* Set the score panel layout */
+
 .score-panel {
 	display: inline-block;
     margin: 0;
@@ -38,20 +46,26 @@ h1 {
 	display: inline-block;
 	margin: 0 0.3rem 0 0;
 }
+
 /* Set the restart icon */
+
 .restart {
 	float: right;
 	cursor: pointer;
 }
+
 .timer {
 	display: inline-block;
 	margin: 0 1rem;
 }
+
 p {
 	display: inline-block;
 	margin: 0 1rem;
 }
+
 /* Set the deck layout */
+
 .deck {
 	display: flex;
 	flex-wrap: wrap;
@@ -59,7 +73,9 @@ p {
 	align-items: center;
 	margin: 3em 3em 3em;
 }
+
 /* Set the cards color, cursor and alignment  */
+
 .deck .card {
 	height: 3.7rem;
 	width: 3.7rem;
@@ -72,11 +88,14 @@ p {
 	justify-content: center;
 	align-items: center;
 }
+
 .show {
 	visibility: visible !important;
 	
 }
+
 /* Set  the cards color if they icons matched */
+
 .deck .card.match {
 	cursor: default;
 	background: #009914;
@@ -85,7 +104,9 @@ p {
 	backface-visibility: visible !important;
 	animation-duration: .75s;
 }
+
 /* Set the card color if the user open a one */
+
 .deck .card.open {
 	cursor: default;
 	background: #000a99;
@@ -93,12 +114,16 @@ p {
 	animation-name: rubberBand;
 	animation-duration: .75s;
 }
+
 /* Disable the card when choosing another */
+
 .deck .card.disabled {
 	pointer-events: none;
 	opacity: 0.9;
 }
+
 /* Set the game dimensions if the user uses  iPad or similar devices */
+
 @media (min-width: 768px) {
 	.container {
 		font-size: 1.3rem;
@@ -114,7 +139,9 @@ p {
 	}
 
 }
+
 /* Set the game dimensions if the user uses Mobile phone*/
+
 @media (max-width: 320px) {
 	.deck {
 		width: 85%;
@@ -125,7 +152,9 @@ p {
 		width: 4.7rem;
 	}
 }
+
 /* Set the footer decoration and the alignment */
+
 footer {
     margin-top: 2.2rem;
 }
