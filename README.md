@@ -35,8 +35,14 @@ The project has 1 page.
 ![End of the game](assets/images/end-of-the-game.png)
 ![Mobile edition](assets/images/mobile-edition.jpg)
 
+## Deployment:
+The site was deployed to GitHub pages. The steps to deploy are as follows:<br />
 
-## Resources: 
+In the GitHub repository, navigate to the Settings tab In the pages section, go to select branch drop-down menu, select Main Once the Main branch has been selected, a link to the site is provided.<br />
+
+The live link can be found here - https://hadi-darra.github.io/memory-game/
+
+## Content: 
 https://fontawesome.com/<br />
 https://www.khanacademy.org<br />
 https://fonts.google.com/<br />
