@@ -144,6 +144,7 @@ for (let i = 0; i < cards.length; i++){
     card.addEventListener("click", displayCard);
     card.addEventListener("click", cardOpen);
 }
+// Congratulations function
 function congratulations(){
     if (matchedCard.length == 16){
         clearInterval(interval);
