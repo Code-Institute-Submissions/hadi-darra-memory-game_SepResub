@@ -36,6 +36,7 @@ document.body.onload = startGame();
 
 // Shuffle the cards and reset all counters once the game get started
 function startGame(){
+    totalMatch=0;
     openedCards = [];
     cards = shuffle(cards);
     for (let i = 0; i < cards.length; i++){
@@ -150,14 +151,9 @@ function congratulations(){
         clearInterval(interval);
         finalTime = timer.innerHTML;
 
-        // show congratulations modal
+        // show congratulations alert
         alert('Congratulations you have fininshed the game in '+ finalTime);
-
-        
-        //showing move and time on alert
-        document.getElementById("finalMove").innerHTML = moves;
-        document.getElementById("totalTime").innerHTML = finalTime;
-
+       startGame();
 
     };
 }
