@@ -23,6 +23,7 @@ During building the code we have faced several problems for example :<br />
 -	**The game continue after the 2nd round**<br />
 1- If you won and repeated the game and also won, the timer keep running .<br />
 2- To solve this issue we have recalled the startGame function after the alert and also we made sure to reset the value of totalMatch to zero.<br />
+## Testing : 
 
 -	**Tested on Web.dev :**<br />
 ![WEB.DEV Test](assets/images/web-dev-test.png)
