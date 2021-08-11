@@ -24,6 +24,7 @@ let displayCard = function (){
 };
 
 // Shuffle the cards
+
 function shuffle(array) {
     let currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -40,6 +41,7 @@ function shuffle(array) {
 document.body.onload = startGame();
 
 // Shuffle the cards and reset all counters once the game get started
+
 function startGame(){
     totalMatch=0;
     openedCards = [];
@@ -77,6 +79,7 @@ function cardOpen() {
 }
 
 //if cards matched 
+
 function matched(){
         openedCards[0].classList.add("match", "disabled");
         openedCards[1].classList.add("match", "disabled");
