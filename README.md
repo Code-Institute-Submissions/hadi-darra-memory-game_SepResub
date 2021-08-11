@@ -3,8 +3,6 @@ A website for a Memory Game , "Memory game" is a fun game that you may have play
 
 The website is implementation for which I have learned (HTML/CSS/JavaScript).
 And I have built this website to present it for the project 2.
-## Installation:
-Click on Gitpod green button.
 
 ## Using the project: 
 The project has 1 page. 
