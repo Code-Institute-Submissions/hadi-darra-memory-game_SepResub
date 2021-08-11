@@ -68,7 +68,7 @@ function cardOpen() {
     let len = openedCards.length;
     if(len === 2){
         moveCounter();
-        if(openedCards[0].id === openedCards[1].id){
+        if(openedCards[0].dataset.framework === openedCards[1].dataset.framework){
             matched();
         } else {
             unmatched();
