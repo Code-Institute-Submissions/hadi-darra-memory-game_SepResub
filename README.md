@@ -23,6 +23,7 @@ During building the code we have faced several problems for example :<br />
 -	**The game continue after the 2nd round**<br />
 1- If you won and repeated the game and also won, the timer keep running .<br />
 2- To solve this issue we have recalled the startGame function after the alert and also we made sure to reset the value of totalMatch to zero.<br />
+
 -	**Tested on Web.dev :**<br />
 ![WEB.DEV Test](assets/images/web-dev-test.png)
 
@@ -33,15 +34,16 @@ During building the code we have faced several problems for example :<br />
 ![HTML Test](assets/images/html-checker.png)
 **_NOTE:_**  Regarding the HTML validator there is no need to add h2-h6 element to the section tag.<br />
 
-## Our accounts on social media:
- - [Twitter](https://twitter.com/)
- - [Instagram](https://www.instagram.com/)
- - [Facebook](https://www.facebook.com/)
 ## Screenshots: 
 ![Closed cards](assets/images/closed-cards.png)
 ![Matched cards](assets/images/matched-cards.png)
 ![End of the game](assets/images/end-of-the-game.png)
 ![Mobile edition](assets/images/mobile-edition.jpg)
+
+## Our accounts on social media:
+ - [Twitter](https://twitter.com/)
+ - [Instagram](https://www.instagram.com/)
+ - [Facebook](https://www.facebook.com/)
 
 ## Deployment:
 The site was deployed to GitHub pages. The steps to deploy are as follows:<br />
