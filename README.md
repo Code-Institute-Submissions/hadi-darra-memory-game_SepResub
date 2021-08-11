@@ -17,8 +17,8 @@ The project has 1 page.
 
 ## Problems and solutions : <br />
 During building the code we have faced several problems for example :<br />
-1 – The icons [which they have <li>] in HTML file they had "type" attribute then we have changed them to ids because there was an error on the HTML validator<br />
-2 - Then we have found that we can't give the same id to several <li> for example 2 cards have the same id="python".
+1 – The icons which they have "li">" in HTML file they had "type" attribute then we have changed them to ids because there was an error on the HTML validator<br />
+2 - Then we have found that we can't give the same id to several "li" for example 2 cards have the same id="python".<br />
 3 - So we correct them using data-framework attribute instead of id and we have made the required correction in game.js file also.
 
 -	**Tested on Web.dev :**<br />
