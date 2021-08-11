@@ -13,12 +13,16 @@ The project has 1 page.
 4- A Cards deck which contains 16 cards (4x4).<br />
 5- At the end our social media accounts links.<br />
 
-## Problems and solutions : <br />
+## Problems and solutions during the game test : <br />
+-	**li attribute**<br />
 During building the code we have faced several problems for example :<br />
 1 – The icons which they have "li" in HTML file they had "type" attribute then we have changed them to ids because there was an error on the HTML validator<br />
 2 - Then we have found that we can't give the same id to several "li" for example 2 cards have the same id="python".<br />
-3 - So we correct them using data-framework attribute instead of id and we have made the required correction in game.js file also.
+3 - So we correct them using data-framework attribute instead of id and we have made the required correction in game.js file also.<br />
 
+-	**The game continue after the 2nd round**<br />
+1- If you won and repeated the game and also won, the timer keep running .<br />
+2- To solve this issue we have recalled the startGame function after the alert and also we made sure to reset the value of totalMatch to zero.<br />
 -	**Tested on Web.dev :**<br />
 ![WEB.DEV Test](assets/images/web-dev-test.png)
 
