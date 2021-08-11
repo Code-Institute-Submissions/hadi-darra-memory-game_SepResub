@@ -1,4 +1,5 @@
 // Collect the data of the cards and deck so we can process it
+
 let card = document.getElementsByClassName("card");
 let cards = [...card];
 let deck = document.getElementById("card-deck");
@@ -7,11 +8,15 @@ let counter = document.querySelector(".moves");
 let matchedCard = document.getElementsByClassName("match");
 let openedCards = [];
 let totalMatch = 0;
+
 // counting the time 
+
 var second = 0, minute = 0; hour = 0;
 let timer = document.querySelector(".timer");
 var interval;
+
 // toggle the status of the cards to visible
+
 let displayCard = function (){
     this.classList.toggle("open");
     this.classList.toggle("show");
@@ -57,6 +62,7 @@ function startGame(){
 }
 
 // check if they opened cards were matched or not
+
 function cardOpen() {
     openedCards.push(this);
     let len = openedCards.length;
@@ -70,7 +76,7 @@ function cardOpen() {
     }
 }
 
-//if matched 
+//if cards matched 
 function matched(){
         openedCards[0].classList.add("match", "disabled");
         openedCards[1].classList.add("match", "disabled");
@@ -82,7 +88,8 @@ function matched(){
         congratulations();
 }
 
-// if not matched
+// if cards not matched
+
 function unmatched(){
     openedCards[0].classList.add("unmatched");
     openedCards[1].classList.add("unmatched");
@@ -96,6 +103,7 @@ function unmatched(){
 }
 
 // diable the choosen card to compare it
+
 function disable(){
     Array.prototype.filter.call(cards, function(card){
         card.classList.add('disabled');
@@ -103,6 +111,7 @@ function disable(){
 }
 
 // enable the card and disable the matched cards
+
 function enable(){
     Array.prototype.filter.call(cards, function(card){
         card.classList.remove('disabled');
@@ -113,6 +122,7 @@ function enable(){
 }
 
 // increase the counter
+
 function moveCounter(){
     moves++;
     counter.innerHTML = moves;
@@ -126,6 +136,7 @@ function moveCounter(){
 }
 
 // Start the timer and increase the seconds then minutes then hours
+
 function startTimer(){
     interval = setInterval(function(){
         timer.innerHTML = minute+"mins "+second+"secs";
@@ -140,12 +151,15 @@ function startTimer(){
         }
     },1000);
 }
+
 for (let i = 0; i < cards.length; i++){
     card = cards[i];
     card.addEventListener("click", displayCard);
     card.addEventListener("click", cardOpen);
 }
+
 // Congratulations function
+
 function congratulations(){
     if (matchedCard.length == 16){
         clearInterval(interval);
