@@ -61,7 +61,7 @@ function cardOpen() {
     let len = openedCards.length;
     if(len === 2){
         moveCounter();
-        if(openedCards[0].type === openedCards[1].type){
+        if(openedCards[0].id === openedCards[1].id){
             matched();
         } else {
             unmatched();
