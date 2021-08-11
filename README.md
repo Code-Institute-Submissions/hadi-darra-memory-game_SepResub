@@ -31,7 +31,7 @@ The project has 1 page.
 ![Screenshot 5](assets/images/mobile-edition.jpg)
 ![Screenshot 6](assets/images/css-checker.png)
 ![Screenshot 6](assets/images/html-checker.png)
-**_NOTE:_**  Regarding the HTML validator there is no need to add h2-h6 element to the section tag
+**_NOTE:_**  Regarding the HTML validator there is no need to add h2-h6 element to the section tag.
 
 ## Resources: 
 https://fontawesome.com/<br />
